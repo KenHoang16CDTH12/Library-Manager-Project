@@ -1,0 +1,135 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*root css*/
+#root {
+	/* Swatch Colors - Blue*/
+	-swatch-100: #BBDEFB;
+	-swatch-200: #90CAF9;
+	-swatch-300: #64BEF6;
+	-swatch-400: #42A5F5;
+	-swatch-500: #2196F3;
+	-swatch-grey: rgb(200.0, 200.0, 200.0);
+	-swatch-dark-grey: rgb(150.0, 150.0, 150.0);
+	-swatch-light-grey: rgb(230.0, 230.0, 230.0);
+    /*Background*/
+    -fx-background-image: url("/img/bg4.jpg") ;
+}
+/*Tittle : HueIC Library*/
+#lblTitle{
+    -fx-font: 50px Serif;
+    -fx-text-fill: blue;
+    -fx-padding: 15 10 10 10;
+
+}
+/*Title Add & Update*/
+#lblTitleAdd{
+    -fx-font: 40px Serif;
+    -fx-text-fill: blue;
+    -fx-padding: 15 10 10 10;
+
+}
+/*CheckBox*/
+.check-box {
+	-fx-padding: 10;
+}
+
+.check-box .text {
+        -fx-text-fill: #1a237e;
+        -fx-font-weight: bold;
+        -fx-font: 16px Serif;
+}
+
+.check-box>.box, .check-box>.box.unfocused, .check-box:disabled>.box,
+	.check-box:indeterminate>.box {
+	-fx-border-radius: 4.0;
+	-fx-border-color:  #e91e63;
+	-fx-border-width: 2;
+	-fx-background-radius: 4;
+	-fx-background-color: transparent;
+	-fx-padding: 1;
+}
+
+.check-box:selected>.box {
+	-fx-border-color:  #e91e63;
+	-fx-background-color: #fce4ec;
+}
+
+.check-box:focused>.box {
+	-fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.30), 6.0, 0.3, 0,
+		0);
+}
+
+.check-box:selected>.box>.mark {
+	-fx-background-color: #3f51b5;
+}
+
+.check-box:indeterminate>.box>.mark {
+	-fx-background-color: #fce4ec;
+	-fx-padding: 0.45em;
+}
+/*Label*/
+.lblAddUpdate {
+    -fx-text-fill: #d50000;
+    -fx-font-weight: bold;
+    -fx-font: 20px Serif;
+}
+
+.record-sales {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+.record-sales:hover {
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+.record-sales:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+.record-sales .text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+.User{
+    -fx-text-fill: #d50000;
+    -fx-font-weight: bold;
+    -fx-font: 18px Serif;
+}
+.text-field {
+    -fx-prompt-text-fill: gray;
+}
+
+.text-field .text {
+    -fx-effect: dropshadow( two-pass-box , blue , .5, 10 , 1 , 1);
+}
+
+.text-field:empty .text {
+    -fx-effect: null ;
+}
+.windows7-default {
+    -fx-background-color:
+        #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 10px;
+}
+#lblSearch {
+    -fx-font: 22px Serif;
+    -fx-text-fill: blue;
+    -fx-padding: 15 10 10 10;
+}
