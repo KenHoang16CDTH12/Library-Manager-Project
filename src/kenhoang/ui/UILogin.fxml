@@ -4,6 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
 <BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml"
             fx:controller="kenhoang.controller.ControllerLogin">
     <top>
@@ -35,7 +36,7 @@
                             vgap="5">
                     <Label
                     fx:id="lblUserName"
-                    text="Tài khoản: "
+                    text="Tài khoản"
                     GridPane.columnIndex="0"
                     GridPane.rowIndex="8"
                     styleClass="User"/>
@@ -45,13 +46,30 @@
                     GridPane.rowIndex="8"
                     styleClass="text-field"
                     />
+                        <ImageView fx:id="imgUserName" fitHeight="16.0" fitWidth="16.0"
+                                   pickOnBounds="true"
+                                   preserveRatio="true"
+                                   visible="false"
+                                   GridPane.rowIndex="8"
+                                   GridPane.columnIndex="1"
+                                   GridPane.halignment="RIGHT">
+                            <image>
+                                <Image url="/img/exitIcon.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets right="5.0" />
+                            </GridPane.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
                     </GridPane>
                 <GridPane
                         hgap="10"
                         vgap="5">
                     <Label
                             fx:id="lblPassword"
-                            text="Mật khẩu : "
+                            text="Mật khẩu"
                             GridPane.columnIndex="0"
                             GridPane.rowIndex="2"
                             styleClass="User"/>
@@ -60,7 +78,31 @@
                             GridPane.columnIndex="1"
                             GridPane.rowIndex="2"
                             styleClass="text-field"
-                            />
+                            onKeyReleased="#passWordEnter"
+                    />
+                    <TextField
+                            fx:id="tfPassWord"
+                            visible="false"
+                            GridPane.columnIndex="1"
+                            GridPane.rowIndex="2"
+                    />
+                    <ImageView fx:id="imgPassWord" fitHeight="16.0" fitWidth="16.0"
+                               pickOnBounds="true"
+                               preserveRatio="true"
+                               visible="false"
+                               GridPane.columnIndex="1"
+                               GridPane.halignment="RIGHT"
+                               GridPane.rowIndex="2">
+                        <image>
+                            <Image url="/img/appear.png" />
+                        </image>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </ImageView>
                 </GridPane>
                 <GridPane
                 hgap="10"

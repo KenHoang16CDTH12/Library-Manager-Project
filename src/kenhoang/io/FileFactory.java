@@ -43,6 +43,12 @@ public class FileFactory {
                 controller.txtUsername.setText(agentLogin.getAgentUID());
                 controller.txtPassword.setText(agentLogin.getAgentPWD());
                 controller.chkSave.setSelected(true);
+                if (controller.txtUsername.getText().trim().length() > 0) {
+                    controller.imgUserName.setVisible(true);
+                }
+                if (controller.txtPassword.getText().trim().length() > 0) {
+                    controller.imgPassWord.setVisible(true);
+                }
             }
         }
     }

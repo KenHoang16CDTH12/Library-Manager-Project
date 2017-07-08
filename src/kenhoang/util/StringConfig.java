@@ -3,9 +3,10 @@ package kenhoang.util;
 /**
  * Created by sample on 7/7/17.
  */
-public class Config {
+public class StringConfig {
     //Login
     public static final String NOTIFICATIONS_LOGIN = "Thông báo đăng nhập";
+    public static final String LOGIN_NOT_USERNAME = "Bạn chưa nhập tên tài khoản";
     public static final String LOGIN_FAILED = "Đăng nhập thất bại. Vui lòng nhập lại thông tin";
     public static final String LOGIN_SUCCESS = "Đăng nhập thành công!";
     //Exit

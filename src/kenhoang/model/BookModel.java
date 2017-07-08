@@ -19,8 +19,8 @@ public class BookModel {
     private String priceBook;
     private Date dateArrived;
     private int qty;//number book
-    private int borrowed;//Config
-    private int loseAndBad;//Config
+    private int borrowed;//StringConfig
+    private int loseAndBad;//StringConfig
     private String desc;//Content
     private boolean active;
     private int idLocation;//Location ID
