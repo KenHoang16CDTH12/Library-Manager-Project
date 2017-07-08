@@ -1,4 +1,4 @@
-package kenhoang.controller;
+package kenhoang.ui.login;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -1,6 +1,6 @@
 package kenhoang.io;
 
-import kenhoang.controller.ControllerLogin;
+import kenhoang.ui.login.ControllerLogin;
 import kenhoang.model.AgentModel;
 
 import java.io.*;

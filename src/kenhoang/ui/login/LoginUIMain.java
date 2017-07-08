@@ -1,28 +1,30 @@
-package kenhoang.main;
+package kenhoang.ui.login;
 
+import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import kenhoang.controller.ControllerLogin;
 import kenhoang.io.FileFactory;
 
-import java.io.IOException;
 
-/**
- * Created by kenhoang on 7/8/17.
- */
-public class ShowWindow {
-    public void LoginUI(Stage primaryStage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/kenhoang/ui/UILogin.fxml"));
+public class LoginUIMain extends Application {
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginUI.fxml"));
         Parent root = loader.load();
         ControllerLogin controller = loader.getController();
         Scene scene = new Scene(root, 700, 400);
-        scene.getStylesheets().add(getClass().getResource("/kenhoang/css/application.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("LoginUI.css").toExternalForm());
         primaryStage.setTitle("HueIC Library");
         primaryStage.setScene(scene);
         primaryStage.show();
         //handle save data login
         FileFactory.showInforSave(controller);
+    }
+
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }

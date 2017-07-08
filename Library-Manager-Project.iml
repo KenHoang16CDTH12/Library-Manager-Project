@@ -12,5 +12,6 @@
     <orderEntry type="library" name="hsqldb" level="project" />
     <orderEntry type="library" name="jackcess-2.1.6" level="project" />
     <orderEntry type="library" name="ucanaccess-4.0.1" level="project" />
+    <orderEntry type="library" name="jfoenix" level="project" />
   </component>
 </module>

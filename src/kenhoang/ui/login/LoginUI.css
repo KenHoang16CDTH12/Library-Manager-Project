@@ -20,13 +20,7 @@
     -fx-padding: 15 10 10 10;
 
 }
-/*Title Add & Update*/
-#lblTitleAdd{
-    -fx-font: 40px Serif;
-    -fx-text-fill: blue;
-    -fx-padding: 15 10 10 10;
 
-}
 /*CheckBox*/
 .check-box {
 	-fx-padding: 10;
@@ -67,11 +61,7 @@
 	-fx-padding: 0.45em;
 }
 /*Label*/
-.lblAddUpdate {
-    -fx-text-fill: #d50000;
-    -fx-font-weight: bold;
-    -fx-font: 20px Serif;
-}
+
 
 .record-sales {
     -fx-padding: 8 15 15 15;
@@ -117,20 +107,4 @@
 
 .text-field:empty .text {
     -fx-effect: null ;
-}
-.windows7-default {
-    -fx-background-color:
-        #3c7fb1,
-        linear-gradient(#fafdfe, #e8f5fc),
-        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
-    -fx-background-insets: 0,1,2;
-    -fx-background-radius: 3,2,1;
-    -fx-padding: 3 30 3 30;
-    -fx-text-fill: black;
-    -fx-font-size: 10px;
-}
-#lblSearch {
-    -fx-font: 22px Serif;
-    -fx-text-fill: blue;
-    -fx-padding: 15 10 10 10;
 }
