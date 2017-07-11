@@ -2,8 +2,6 @@ package kenhoang.ui.dashboard;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPopup;
-import com.jfoenix.controls.JFXPopup.PopupHPosition;
-import com.jfoenix.controls.JFXPopup.PopupVPosition;
 import com.jfoenix.controls.JFXRippler;
 import com.jfoenix.controls.JFXToolbar;
 import java.io.IOException;
@@ -120,19 +118,15 @@ public class DashboardController implements Initializable {
 
     //Load all fxml files to a cahce for swapping
     private void createPages() {
-/*
         try {
-            home = FXMLLoader.load(getClass().getResource("/modules/Overview.fxml"));
-            list = FXMLLoader.load(getClass().getResource("/modules/Profile.fxml"));
-            add = FXMLLoader.load(getClass().getResource("/modules/Register.fxml"));
-
+            home = FXMLLoader.load(getClass().getResource("Overview.fxml"));
+            list = FXMLLoader.load(getClass().getResource("Profiles.fxml"));
+            add = FXMLLoader.load(getClass().getResource("Profiles.fxml"));
             //set up default node on page load
             setNode(home);
         } catch (IOException ex) {
-            Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
+           Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-*/
     }
 
     @FXML

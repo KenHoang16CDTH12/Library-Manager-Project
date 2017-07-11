@@ -13,13 +13,13 @@ public class LoginUIMain extends Application {
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginUI.fxml"));
         Parent root = loader.load();
-        ControllerLogin controller = loader.getController();
+        LoginController controller = loader.getController();
         Scene scene = new Scene(root, 700, 400);
         scene.getStylesheets().add(getClass().getResource("LoginUI.css").toExternalForm());
         primaryStage.setTitle("HueIC Library");
         primaryStage.setScene(scene);
         primaryStage.show();
-        //handle save data login
+        //handle save data kenhoang.ui.dashboard.login
         FileFactory.showInforSave(controller);
     }
 

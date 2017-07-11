@@ -2,11 +2,13 @@ package kenhoang.ui.login;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import kenhoang.connect.AgentService;
 import kenhoang.io.FileFactory;
@@ -17,8 +19,10 @@ import kenhoang.util.StringConfig;
 import kenhoang.util.Util;
 
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class ControllerLogin {
+public class LoginController {
     //Components
     public TextField txtUsername;
     public PasswordField txtPassword;
@@ -35,6 +39,7 @@ public class ControllerLogin {
     public ImageView imgPassWord;
     public TextField tfPassWord;
 
+    public static int ID_AGENT = 1;
     /**
      * Xử lý sự kiện đăng nhập btnLogin
      * */
@@ -53,11 +58,19 @@ public class ControllerLogin {
                 ShowNotification.notificationError(StringConfig.NOTIFICATIONS_LOGIN, StringConfig.LOGIN_FAILED);
             }
             else {
-                //Comment 19:22 7/7
-            /*Stage stage = (Stage) btnLogin.getScene().getWindow();
-            stage.close();
-            showWindow();*/
-                ShowNotification.notificationInformation(StringConfig.NOTIFICATIONS_LOGIN, StringConfig.LOGIN_SUCCESS);
+                ID_AGENT = AgentLogin.getID();
+                btnLogin.getScene().getWindow().hide();
+                try {
+                    Stage dashboardStage = new Stage();
+                    dashboardStage.setTitle("Home");
+                    Parent root = FXMLLoader.load(getClass().getResource("/kenhoang/ui/dashboard/DashboardUI.fxml"));
+                    Scene scene = new Scene(root);
+                    dashboardStage.setScene(scene);
+                    dashboardStage.setMaximized(true);
+                    dashboardStage.show();
+                } catch (IOException ex) {
+                    Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         }
 

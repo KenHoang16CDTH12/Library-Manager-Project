@@ -5,8 +5,8 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.Cursor?>
-<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml"
-            fx:controller="kenhoang.ui.login.ControllerLogin">
+<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8"
+            fx:controller="kenhoang.ui.login.LoginController">
     <top>
         <Label fx:id="lblTitle" styleClass="lblTitle" text="Thư viện HueIC" BorderPane.alignment="CENTER"
         >

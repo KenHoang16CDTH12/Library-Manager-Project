@@ -1,6 +1,6 @@
 package kenhoang.io;
 
-import kenhoang.ui.login.ControllerLogin;
+import kenhoang.ui.login.LoginController;
 import kenhoang.model.AgentModel;
 
 import java.io.*;
@@ -32,9 +32,9 @@ public class FileFactory {
         return null;
     }
     /**
-     * Handle save data login
+     * Handle save data kenhoang.ui.dashboard.login
      * */
-    public static void showInforSave(ControllerLogin controller) {
+    public static void showInforSave(LoginController controller) {
         File file = new File("AgentLogin.data");
         if (file.exists()) {
             Object data = FileFactory.readData("AgentLogin.data");

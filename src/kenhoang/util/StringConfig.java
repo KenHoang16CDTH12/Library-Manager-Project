@@ -13,5 +13,9 @@ public class StringConfig {
     public static final String NOTIFICATION_EXIT = "Thoát";
     public static final String HEADER_EXIT = "Xác nhận thoát phần mềm.";
     public static final String CONTENT_EXIT = "Bạn chắc chắn muốn thoát chương trình ?";
-
+    //Role
+    public static final String STUDENTS = "Sinh viên";
+    public static final String AGENTS = "Thủ thư";
+    public static final String ADMIN = "Admin";
+    public static final String GUEST = "Khách";
 }

@@ -22,9 +22,8 @@
            minHeight="-Infinity"
            minWidth="-Infinity"
            prefHeight="720.0" prefWidth="1300.0"
-           stylesheets="@DashboardUI.css"
-           xmlns="http://javafx.com/javafx/8.0.111"
-           xmlns:fx="http://javafx.com/fxml/1"
+           stylesheets="@customdashboard.css"
+           xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/8"
            fx:controller="kenhoang.ui.dashboard.DashboardController">
     <children>
         <AnchorPane prefHeight="200.0" prefWidth="200.0">
@@ -97,8 +96,8 @@
                         <Text fill="WHITE"
                               strokeType="OUTSIDE"
                               strokeWidth="0.0"
-                              text="Quản lý thư viện HueIC"
-                              wrappingWidth="273.13671875"
+                              text="CHƯƠNG TRÌNH QUẢN LÝ THƯ VIỆN TRƯỜNG CAO ĐẲNG CÔNG NGHIỆP HUẾ"
+                              wrappingWidth="659"
                               BorderPane.alignment="CENTER">
                             <font>
                                 <Font name="Roboto Medium"
