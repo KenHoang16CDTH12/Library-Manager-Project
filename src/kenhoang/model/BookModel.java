@@ -9,7 +9,7 @@ import java.sql.Date;
 public class BookModel {
     private int ID;
     private String idBook;
-    private int idCat;//Category ID
+    private String idCat;//Category ID
     private String nameBook;
     private String ISBN;//QR Code
     private String nameAuthor;
@@ -41,11 +41,11 @@ public class BookModel {
         this.idBook = idBook;
     }
 
-    public int getIdCat() {
+    public String getIdCat() {
         return idCat;
     }
 
-    public void setIdCat(int idCat) {
+    public void setIdCat(String idCat) {
         this.idCat = idCat;
     }
 
@@ -161,10 +161,7 @@ public class BookModel {
         this.idLocation = idLocation;
     }
 
-    public BookModel() {
-    }
-
-    public BookModel(int ID, String idBook, int idCat, String nameBook, String ISBN, String nameAuthor, String publishBook, Date yearPublishBook, int pagesCountBook, String priceBook, Date dateArrived, int qty, int borrowed, int loseAndBad, String desc, boolean active, int idLocation) {
+    public BookModel(int ID, String idBook, String idCat, String nameBook, String ISBN, String nameAuthor, String publishBook, Date yearPublishBook, int pagesCountBook, String priceBook, Date dateArrived, int qty, int borrowed, int loseAndBad, String desc, boolean active, int idLocation) {
         this.ID = ID;
         this.idBook = idBook;
         this.idCat = idCat;
@@ -182,5 +179,8 @@ public class BookModel {
         this.desc = desc;
         this.active = active;
         this.idLocation = idLocation;
+    }
+
+    public BookModel() {
     }
 }

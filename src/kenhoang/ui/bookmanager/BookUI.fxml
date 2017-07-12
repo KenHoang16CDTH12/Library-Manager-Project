@@ -51,16 +51,16 @@
                             <content>
                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                     <children>
-                                        <TableView fx:id="tableDriversInfo" layoutX="7.0" layoutY="14.0" prefHeight="493.0" prefWidth="1100">
+                                        <TableView fx:id="tblBook" layoutX="7.0" layoutY="14.0" prefHeight="800.0" prefWidth="1100">
                                             <columns>
-                                                <TableColumn fx:id="colSTT" prefWidth="80.0" text="STT" />
+                                                <TableColumn fx:id="colSTT" prefWidth="100.0" text="STT" />
                                                 <TableColumn fx:id="colIDBook" minWidth="0.0" prefWidth="150.0" text="Mã sách" />
                                                 <TableColumn fx:id="colNameBook" minWidth="0.0" prefWidth="310" text="Tên sách" />
                                                 <TableColumn fx:id="colAuthor" minWidth="0.0" prefWidth="140" text="Tác giả" />
                                                 <TableColumn fx:id="colCat" minWidth="0.0" prefWidth="120.0" text="Mã loại sách" />
                                                 <TableColumn fx:id="colYearPublish" minWidth="0.0" prefWidth="90.0" text="Năm XB" />
                                                 <TableColumn fx:id="colQty" minWidth="0.0" prefWidth="90.0" text="Số lượng" />
-                                                <TableColumn fx:id="colDesc" minWidth="0.0" prefWidth="100.0" text="Ghi chú" />
+                                                <TableColumn fx:id="colState" minWidth="0.0" prefWidth="80.0" text="Trạng thái" />
                                             </columns>
                                         </TableView>
                                         <AnchorPane layoutX="1120.0" layoutY="14.0" prefHeight="348.0" prefWidth="186.0" styleClass="card">

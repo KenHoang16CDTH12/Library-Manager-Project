@@ -4,15 +4,24 @@ package kenhoang.model;
  * Created by sample on 7/7/17.
  */
 public class CategoryModel {
-    private int idCat;
+    private int ID;
+    private String idCat;
     private String catName;
     private String catDesc;
 
-    public int getIdCat() {
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public String getIdCat() {
         return idCat;
     }
 
-    public void setIdCat(int idCat) {
+    public void setIdCat(String idCat) {
         this.idCat = idCat;
     }
 
@@ -32,7 +41,8 @@ public class CategoryModel {
         this.catDesc = catDesc;
     }
 
-    public CategoryModel(int idCat, String catName, String catDesc) {
+    public CategoryModel(int ID, String idCat, String catName, String catDesc) {
+        this.ID = ID;
         this.idCat = idCat;
         this.catName = catName;
         this.catDesc = catDesc;
